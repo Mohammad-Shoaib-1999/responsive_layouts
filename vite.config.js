@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/responsive_layouts",
   plugins: [react()],
+  build: {
+    outDir: 'build',
+  },
 })
