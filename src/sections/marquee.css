@@ -1,0 +1,33 @@
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  animation: marqueeScroll 20s linear infinite; /* Adjust duration as needed */
+}
+
+.marquee-container-left {
+  display: flex;
+  overflow: hidden;
+  animation: marqueeScrollleft 20s linear infinite; /* Adjust duration as needed */
+}
+
+.marquee-item {
+  /* margin-right: 4rem; */
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeScrollleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
