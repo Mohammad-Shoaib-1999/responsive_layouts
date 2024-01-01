@@ -28,14 +28,38 @@ const data = [
 ];
 
 const Marquee = () => {
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 1000,
+  // };
   const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    infinite: true,
     autoplaySpeed: 1000,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
